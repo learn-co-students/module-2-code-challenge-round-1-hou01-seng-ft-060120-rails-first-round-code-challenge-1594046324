@@ -24,3 +24,7 @@ heroines = [
 ]
 
 heroines.each { |heroine| Heroine.create(heroine) }
+
+10.times do
+HeroinePower.create(heroine_id: Heroine.all.sample.id, power_id: Power.all.sample.id)
+end
