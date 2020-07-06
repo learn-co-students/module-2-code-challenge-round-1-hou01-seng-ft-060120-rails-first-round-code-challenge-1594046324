@@ -1,0 +1,34 @@
+<h1> Create Your Own Super Hero </h1>
+
+<%= form_for @hero do |r| %>
+
+<% if @hero.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@hero.errors.count, "error") %>
+      prohibited this post from being saved:
+    </h2>
+ 
+    <ul>
+    <% @hero.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+   
+<%= r.label :name %>
+<%= r.text_field :name %>
+<br><br>
+<%= r.label :super_name %>
+<%= r.text_field :super_name %>
+<br><br>
+<%= r.label :power %>
+<%= r.collection_select :power_ids, Power.all, :id, :name %>
+<br><br>
+<%= r.submit %>
+<% end %>
+
+
+
+

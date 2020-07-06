@@ -1,0 +1,13 @@
+<h1> Super Hero </h1> 
+<br>
+<h2> Superhero name: <%= @hero.super_name %> </h2>
+<h3> Regular name: <%= @hero.name %> </h3>
+<ul>
+<% @hero.powers.each do |h| %> 
+    <li>
+    <a href='/powers/<%= h.id %>'>
+    <%= h.name %>
+    </a>
+    </li>
+<% end %>
+</ul
