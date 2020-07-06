@@ -1,0 +1,11 @@
+<h1> Your Female Heroes</h1>
+    <ul>
+        <li>
+            <%form_for: @heroine.each do |heroine|%>
+                <%=heroine.name%>
+<br>
+                Description: <%=power.description%>
+                </li>
+                <br>
+<%end%>
+
