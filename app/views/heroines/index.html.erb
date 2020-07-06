@@ -2,9 +2,11 @@
 
 <ul>
   <% @heroines.each do |heroine| %>
+  <a href = "/heroines/ <%= heroine.id %> ">
     <li>
       <%= heroine.super_name %>
     </li>
+    </a>
     <br>
   <% end %>
 </ul>

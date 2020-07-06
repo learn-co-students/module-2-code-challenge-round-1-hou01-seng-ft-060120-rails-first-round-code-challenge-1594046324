@@ -1,0 +1,33 @@
+<h1>Creating a New Heroine</h1>
+
+
+<%= form_for @heroine do |f|%>
+
+<p>Input a Name</p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>Input a SuperName</p>
+    <%= f.label :super_name%>
+    <%= f.text_field :super_name %>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+<%= f.submit %>
+
+<% end %>
+
+
+
