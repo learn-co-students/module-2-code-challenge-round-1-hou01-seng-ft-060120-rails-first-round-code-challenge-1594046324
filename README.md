@@ -55,7 +55,7 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ***Read through these deliverables carefully to understand the requirements for this code challenge. Tackle them one by one, as they build on each other sequentially.***
 
-### 1. Heroine-Power association
+<!-- ### 1. Heroine-Power association
 
 Create the association between the models. Update the schema and models to create the HeroinePower association.
 
@@ -64,25 +64,25 @@ A HeroinePower should have a:
 - a heroine
 - a power
 
-Each Heroine can have multiple powers. Powers can belong to multiple Heroines.
+Each Heroine can have multiple powers. Powers can belong to multiple Heroines. -->
 
-### 2. Heroine index page links
+<!-- ### 2. Heroine index page links
 
-On the heroines index page, a heroine's super name should link to that heroine's show page.
+On the heroines index page, a heroine's super name should link to that heroine's show page. -->
 
-### 3. Heroine show page
+<!-- ### 3. Heroine show page
 
 Each Heroine show page should include the:
 
 - name (eg. Kamala Khan)
-- super name (eg. Ms. Marvel)
+- super name (eg. Ms. Marvel) -->
 
-### 4. Power show page
+<!-- ### 4. Power show page
 
 Power show page should include the:
 
 - name
-- description
+- description -->
 
 ### 5. Heroine Create page
 

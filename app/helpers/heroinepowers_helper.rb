@@ -1,0 +1,2 @@
+module HeroinepowersHelper
+end
