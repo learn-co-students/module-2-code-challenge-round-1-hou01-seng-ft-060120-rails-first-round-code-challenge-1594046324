@@ -1,22 +1,17 @@
-<h1>New Heroine</h1>
-
+<h1>A new hero, I see</h1>
 <% if @heroine.errors.any? %>
-    <ul>
-        <% @heroine.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-        <% end %>
-    </ul>
+    <% @heroine.errors.full_messages.each do |message| %>\
+        <h3><%= message %></h3>
+    <% end %>
 <% end %>
 
-<%= form_for @heroine do |f| %>
-    <%= f.label :name %><br>
+<%=form_for(@heroine) do |f| %>
+   
+    <%= f.label :Name %><br>
     <%= f.text_field :name %><br>
-    <br>
-    <%= f.label :super_name %><br>
+    <%= f.label :Super_Name %><br>
     <%= f.text_field :super_name %><br>
-    <br>
-    <%= f.label :power %><br>
-    <%= f.collection_select :id, Power.all, :id, :name, prompt: true %><br>
-    <br>
+    <%= f.label :Super_Power %><br>
+    <%= f.collection_select(:power_id, @powers, :id, :name, {:selected => @heroine.power_ids}) %><br>
     <%= f.submit %>
 <% end %>

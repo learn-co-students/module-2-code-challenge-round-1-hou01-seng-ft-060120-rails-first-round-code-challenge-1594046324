@@ -1,8 +1,4 @@
 class Power < ApplicationRecord
-    has_many :heroine_powers
+    has_many :heroine_powers, dependent: :delete_all
     has_many :heroines, through: :heroine_powers
-
-    def power_heroines
-        self.heroines.count
-    end
 end
